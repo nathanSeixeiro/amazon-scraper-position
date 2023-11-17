@@ -43,7 +43,7 @@ For detailed information about the challenge and requirements, please [click her
 or
 
 ```bash
-  npm run start
+  npm run dev
 ```
 
 5. Open a web browser and go to `http://localhost:3000/api/scrape` to access the application.
