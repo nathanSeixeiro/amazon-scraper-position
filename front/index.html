@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Search Position</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body class="bg-light">
+    <div class="container mt-5">
+      <h1 class="mb-4 text-center">Amazon Search Position Checker</h1>
+
+      <!-- Input fields for ASIN and search keyword -->
+      <div class="row align-items-center">
+        <div class="mb-3 col">
+          <label for="keywordInput" class="form-label">Search Keyword:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="keywordInput"
+            placeholder="Enter Keyword"
+          />
+        </div>
+
+        <div class="mb-3 col">
+          <label for="asinInput" class="form-label">ASIN:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="asinInput"
+            placeholder="Enter ASIN"
+          />
+        </div>
+
+        <!-- Button to initiate the scraping process -->
+        <button class="btn btn-primary col custom-btn" id="scrapeButton">
+          Check Position
+        </button>
+      </div>
+      <!-- Display the position result -->
+      <div id="result" class="mt-4">
+        <!-- example card 
+          <div class="card">
+          <img src="./Frame 6.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <div class="text-section">
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">Some quick example text .</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Bootstrap JS  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+body {
+  padding: 1em;
+}
+.card {
+  max-width: 30em;
+  flex-direction: row;
+}
+
+.card img {
+  max-width: 25%;
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 0.7em;
+}
+
+.card-body {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.text-section {
+  max-width: 60%;
+}
+
+.custom-btn {
+  width: 150px;
+  height: 40px;
+}
+
+@media screen and (max-width: 475px) {
+  .card {
+    font-size: 0.9em;
+  }
+}
