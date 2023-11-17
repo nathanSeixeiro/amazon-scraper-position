@@ -8,6 +8,11 @@ document.getElementById("scrapeButton").addEventListener("click", async () => {
     const result = await response.json();
 
     // Check if the response status is OK, or else throw an error
+    if (!keyword || !asin) {
+      alert("Please enter a keyword and ASIN");
+      return;
+    }
+
     if (!response.ok) {
       throw new Error(`Failed to fetch data. Status: ${response.status}`);
     }
